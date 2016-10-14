@@ -1,0 +1,21 @@
+<div class="add_part col-xs-12" ng-hide="hider">
+    <form class="form-horizontal">
+        <div class="form-group form-group-xs">
+            <label class="col-xs-2 control-label" for="xs" translate="taski"></label>
+            <div class="col-xs-10">
+                <input class="form-control" type="text" id="xs" ng-model="id" ng-pattern="/^\d+$/">
+            </div>
+        </div>
+        <div class="form-group form-group-sm">
+            <label class="col-xs-2 control-label" for="xs" translate="taskn"></label>
+            <div class="col-xs-10">
+                <input class="form-control" type="text" id="xs" ng-model="name" ng-pattern="/[a-zA-Z]/">
+            </div>
+        </div>
+    </form>
+    <div class="col-xs-offset-3 col-xs-4">
+        <button class="add" ng-click="add_data()" translate="add"></button>
+    </div>
+    <div class="col-xs-4">
+        <button class="cancel" ng-click="close()" translate="cancel"></button>
+    </div>
